@@ -1,0 +1,62 @@
+:root{
+    --cor0: rgb(183, 128, 228);
+    --cor1: rgb(85, 143, 219);
+
+    --tam0: 250px;
+
+    --font-padrao: arial;
+    --font-destaque: 'Bebas Neue', cursive;   
+}
+body{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    font-family: var(--font-padrao);
+    background: #fff;
+    padding-top: 10px;
+    height: 100vh;
+}
+header{
+    background-color: var(--cor0);
+}
+h1{
+    text-align: center;
+    background-color: var(--cor1) ;
+    color:#fff;
+}
+html{
+    background-image: url(../images/papel.jpg);
+}
+main{
+    margin: 8px;
+    padding-bottom: 10px;
+}
+.imgs{
+    display: block;
+    align-content: center;
+}
+.tweet{
+    width: var(--tam0);
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid var(--cor1);
+    box-shadow: 5px 5px 10px var(--cor1);
+}
+@media (max-width: 902px){
+    body{
+        height: auto;
+    }
+}
+@media (max-width: 1050px){
+    html{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 450px){
+    html{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
