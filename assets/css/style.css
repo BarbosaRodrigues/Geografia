@@ -1,9 +1,10 @@
 :root{
     --cor0: rgb(183, 128, 228);
-    --cor1: rgb(85, 143, 219);
-    --cor2: rgba(255, 255, 255, 0.123);
+    --cor1: rgb(87, 144, 219);
+    --cor2: rgba(87, 144, 219, 0.575);
 
     --tam0: 250px;
+    --tam1: 220px;
 
     --font-padrao: arial;
     --font-destaque: 'Bebas Neue', cursive;   
@@ -18,12 +19,8 @@ body{
     height: 100%;
 }
 footer{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: var(--font-padrao);
-    height: 100%;
-    position: relative;
+    background-color: var(--cor2);
+    padding:5px;
     text-align: center;
 }
 header{
@@ -49,15 +46,7 @@ main{
 .p-footer{
     margin: 0;
     padding: 0;
-    background: var(--cor2);
     color: #fff;
-    position: absolute;
-    text-align: justify;
-    top: 50%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 3px;
-    padding-top: 3px;
 }
 .tweet{
     width: var(--tam0);
@@ -82,5 +71,10 @@ main{
     html{
         padding-left: 12px;
         padding-right: 12px;
+    }
+}
+@media (max-width: 340px){
+    .tweet{
+        width: var(--tam1);
     }
 }
