@@ -1,6 +1,7 @@
 :root{
     --cor0: rgb(183, 128, 228);
     --cor1: rgb(85, 143, 219);
+    --cor2: rgba(255, 255, 255, 0.123);
 
     --tam0: 250px;
 
@@ -14,7 +15,16 @@ body{
     font-family: var(--font-padrao);
     background: #fff;
     padding-top: 10px;
-    height: 100vh;
+    height: 100%;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: var(--font-padrao);
+    height: 100%;
+    position: relative;
+    text-align: center;
 }
 header{
     background-color: var(--cor0);
@@ -29,11 +39,25 @@ html{
 }
 main{
     margin: 8px;
+    margin-bottom: 0;
     padding-bottom: 10px;
 }
 .imgs{
     display: block;
     align-content: center;
+}
+.p-footer{
+    margin: 0;
+    padding: 0;
+    background: var(--cor2);
+    color: #fff;
+    position: absolute;
+    text-align: justify;
+    top: 50%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 .tweet{
     width: var(--tam0);
